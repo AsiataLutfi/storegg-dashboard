@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import NavLink from "./NavLink";
+import NavLinkComponent from "./NavLinkComponent";
 
 // Assets
 import {
@@ -19,46 +19,46 @@ const NavList = () => {
     <nav className="mt-12.5">
       <ul>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="overview">
             <ViewGridIcon className="mr-4 h-6 w-6" />
             Overview
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="transactions">
             <ShoppingBagIcon className="mr-4 h-6 w-6" />
             Transactions
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="messages">
             <ChatAltIcon className="mr-4 h-6 w-6" />
             Messages
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="card">
             <CreditCardIcon className="mr-4 h-6 w-6" />
             Card
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="rewards">
             <BadgeCheckIcon className="mr-4 h-6 w-6" />
             Rewards
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="settings">
             <CogIcon className="mr-4 h-6 w-6" />
             Settings
-          </NavLink>
+          </NavLinkComponent>
         </li>
         <li className="mb-7.5">
-          <NavLink link="/">
+          <NavLinkComponent link="logout">
             <LogoutIcon className="mr-4 h-6 w-6" />
             Log Out
-          </NavLink>
+          </NavLinkComponent>
         </li>
       </ul>
     </nav>

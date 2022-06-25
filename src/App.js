@@ -4,7 +4,13 @@ import React from "react";
 import ProfileUser from "./components/ProfileUser/ProfileUser";
 import NavList from "./components/Navigation/NavList";
 import GetStarted from "./components/GetStarted/GetStarted";
-import Overview from "./components/Overview/Overview";
+
+// Pages
+import Overview from "./pages/Overview/Overview";
+import Transaction from "./pages/Transaction/Transaction";
+
+// Router
+import { Routes, Route, Navigate } from "react-router-dom";
 
 const App = () => {
   return (
@@ -16,7 +22,14 @@ const App = () => {
           <GetStarted />
         </aside>
         <main className="col-span-9 p-12.5">
-          <Overview />
+          <Routes>
+            <Route
+              path="/"
+              element={<Navigate to="/overview" replace={true} />}
+            />
+            <Route path="/overview" element={<Overview />} />
+            <Route path="/transactions" element={<Transaction />} />
+          </Routes>
         </main>
       </div>
     </div>
