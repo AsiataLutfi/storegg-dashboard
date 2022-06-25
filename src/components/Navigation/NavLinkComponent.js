@@ -4,7 +4,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const NavLinkComponent = (props) => {
-  let classes = "flex items-center text-lg  transition-colors duration-300";
+  let classes = "flex items-center text-lg transition-colors duration-300";
 
   const className =
     classes + " text-downriver-secondary hover:text-downriver-primary";

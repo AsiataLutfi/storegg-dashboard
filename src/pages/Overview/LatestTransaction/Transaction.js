@@ -20,8 +20,11 @@ const Transaction = (props) => {
       </thead>
       <tbody>
         {props.datas.map((data) => (
-          <tr key={data.id}>
-            <td className="pb-5">
+          <tr
+            key={data.id}
+            className="rounded-xl duration-300 hover:bg-blue-50"
+          >
+            <td className="py-2">
               <TransactionHeader
                 thumbnail={data.img}
                 name={data.name}
